@@ -1,46 +1,63 @@
+# Робота з файлами
+import os
 import random
-from fileinput import filename
 
-# filename = 'f1.txt'
-# Запис
-# with open(filename, 'w') as f:
-#     f.write('New Text 1!')
-
-#  Зчитування
-# with open(filename, 'r') as f:
-#     text = f.read()
-#     print(text)
+# Завдання 1
+# file_name = 'f1.txt'
+# file = open(file_name, mode='w')
 #
-# f = open(filename, 'r')
 # try:
-#     text = f.read()
-#     print(text)
-# finally:
-#     f.close()
-#
-
-# 1
-# with open(filename, 'a') as file:
 #     for n in range(0, 10):
-#         file.write(str(random.randint(-10, 10)) + '\n')
+#         file.write("Text: {num} {nl}".format(num=n, nl='\n'))
+#         # file.write('Text: {} {}'.format(n, '\n'))
 #
-# with open(filename, 'r') as file:
-#     number = file.readline()
-#     while number:
-#         print(number)
-#         number = file.readline()
+# finally:
+#     file.close()
 
-# filename = 'f8.txt'
-# with open(filename, 'w', encoding='utf-8') as file:
-#     file.write('Text-utf-8.')
-# with open(filename, 'r', encoding='utf-8') as file:
-#     print(file.read())
 
-# filename = 'b1.txt'
-# with open(filename, 'ab') as file:
-#     file.write(b"\x4E\x4E\x4E\x4E\x2E")
-# with open(filename, 'rb') as file:
+# Завдання 2
+# file_name = 'f2.txt'
+# with open(file_name, 'w') as file:
+#     for n in range(0, 100):
+#         file.write(str(random.randint(1, 1000)) + '\n')
+
+
+# зчитування з файла
+# with open('f1.txt', 'r') as file:
 #     content = file.read()
-#     content =
 #     print(content)
+
+# with open('f1.txt', 'r') as file:
+#     line = file.readline()
+#     while line:
+#         print(line)
+#         # ... наш код
+#         line = file.readline()
+
+# with open('f1.txt', 'wt') as file:
+#     for i in range(0, 10):
+#         file.write(str(i) + '\n')
+
+
+# Завдання 3
+# with open("f2.txt", "w", encoding="utf-8") as file:
+#     file.write(str(random.randint(0, 100)))
+# with open("f2.txt", "r", encoding="utf-8") as file:
+#     r = file.read()
+#     print(r)
+#
+# with open('f2.txt', 'rb') as f:
+#     byte = f.read(1)
+#     while byte:
+#         binary_representation = bin(byte[0])[2:].zfill(8)
+#         print(binary_representation)
+#         byte = f.read(1)
+
+# with open('f3.bin', 'wb') as file:      # ASCII - Hex
+#     file.write(b'\x50\x79\x74\x68\x6F\x6E\x21')
+#
+# # Читання бінарних даних
+# with open('f3.bin', 'rb') as file:
+#     binary_content = file.read()
+#     print(binary_content)
 
