@@ -51,7 +51,7 @@ __[DBeaver Community](https://dbeaver.io/download/)__ — це безкошто�
     ```python
     cursor.execute('''
     INSERT INTO users (name, age) VALUES (?, ?)
-    ''', ('John Doe', 28))
+    ''', ('Michael', 28))
 
     # Фіксуємо зміни
     db.commit()
@@ -74,7 +74,7 @@ __[DBeaver Community](https://dbeaver.io/download/)__ — це безкошто�
     ```python
     cursor.execute('''
     UPDATE users SET age = ? WHERE name = ?
-    ''', (29, 'John Doe'))
+    ''', (29, 'Michael'))
     db.commit()
     ```
 
@@ -84,7 +84,7 @@ __[DBeaver Community](https://dbeaver.io/download/)__ — це безкошто�
     ```python
     cursor.execute('''
     DELETE FROM users WHERE name = ?
-    ''', ('John Doe',))
+    ''', ('Michael',))
     db.commit()
     ```
 
