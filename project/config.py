@@ -1,0 +1,2 @@
+BOT_TOKEN = "7613390258:AAGucCmq8E8ts6bn8FbU-0lg0jRl3VHbDrM"
+DB_NAME = 'notebook.db'
